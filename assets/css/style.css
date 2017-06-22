@@ -1,0 +1,388 @@
+
+/* the reason why I'm gonna use * tag and margin, padding =0 to make sure that everything on the page will get 0 margin and padding*/
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+/* I used the ul to put the nav inside the ul, after that float it to the left to set it as a raw, its better to code it in this way because if i will use padding, its gonna effect the borders too which i dont want that, I want my borders to be in one size without getting any changes when i chang the padiding*/
+ul {
+	list-style: none;
+}
+
+li {
+	float: left;
+}
+
+
+h1,h3 { 
+ 	color: #4aaaa5;
+ 	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+body{
+	
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/hip-square.png");
+ }
+ /* In order to center the container we must specify a width. 
+        This allows the container to automcatically adjust based on the size of the browser.
+        If you don't specify a width the container will take up a width of a 100%, and you won't see any change. this comment about setting the width and margin on 0 auto*/
+.container{
+	height: 100vh;
+	width: 100vw;
+}
+ header{
+ 	background-color: #ffffff;
+ 	border-bottom: 2px solid #dddddd;
+ 	height: 10vh;
+ 	margin: 0 auto;
+ 	width: 100%;
+
+ 	}
+ footer{
+ 	background-color: #666666;
+ }
+ aside{
+ 	background-color: #ffffff;
+ 	border: 4px solid #dddddd;
+ 	min-width: 270px;
+ 	height: 120px;
+ 	float: left;
+ 
+
+ }
+/* the reson why I typed min-height instead of hight becuase I want the hight change if I have more paraghraph*/
+section{
+	border: 4px solid #dddddd;
+	width: 650px;
+	min-height: 300px;
+	background-color: #ffffff;
+	margin-right: 10px auto;
+	float: left;
+
+
+
+}
+/* I used id because I want to do specific changes on the main logo*/
+#main-logo {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	
+	float: left;
+	padding: 27px 10px;
+/* I used the id connect here to float the nav box to the right in order to make it look as a raw*/
+}
+#connect{
+	float: right;
+}
+/* because I used floating elements in the header, I should clear both on the left and right side, so I don't get the main up in the header*/
+/* In order to center the container we must specify a width. 
+        This allows the container to automcatically adjust based on the size of the browser.
+        If you don't specify a width the container will take up a width of a 100%, and you won't see any change. this comment about setting the width and margin on 0 auto*/
+
+main{ 
+	clear: both;
+	margin: 5vw;
+	width: 90vw;
+	min-height: 80vh;
+
+
+ }
+ /* the reason why I used aside img and give it the width size:60 to change the size of all images inside the aside tag */
+ aside img {
+ 	width: 60px;
+ 	padding: 10px;
+ /* to set everything in the footer box*/	
+ }
+ footer{
+ 	padding: 20px 0px; 
+ 	text-align: center;
+ 	clear: both;
+ 	width: 100%;
+ 	color: #dddddd;
+ 	border-top: 10px solid #4aaaa5;
+ 	min-height: 10vh;
+
+/* to set everything about h1 in the section box*/
+ }
+section h1 {
+margin:20px 20px;
+border-bottom: 2px solid #dddddd;
+padding-bottom: 10px;
+}
+
+/* to set the padding in the nav box*/
+nav{
+padding: 45px 40px 35px 20px;
+margin-right: 5px;
+
+}
+
+/*the reson why I used float to move the image to the left & the reson why using the margin-right to put space between the image and the paragraph*/
+#aboutme-section img {
+	float: left;
+	margin-right: 10px;
+	
+}
+
+/* I used the class section-content to set the margin on the section box in contact.html*/
+.section-content {
+
+	margin-top: 20px;
+	margin-left: 17px;
+	margin-right: 17px;
+}
+/* to remove the line under the links*/
+a{
+	text-decoration: none;
+	color: #dddddd;
+	padding: 10px;
+
+}
+
+/* I used a:hover on the nav box to change the background color and the font-weight of the nav when I indicate the mouse indicator on the nav options*/
+nav a:hover {
+	background-color: #4aaaa5;
+	color: whitesmoke;
+	padding: 20px 0;
+	font-weight: bold;
+	border-radius: 20px;
+}
+
+/* the reson why I used header li ~ li to put borders on the left side of the nav, I used li ~ li because I used li to set the nav*/ 
+ header li ~ li{
+	border-left:3px solid #dddddd;
+ }
+ /* I used id to put border-bottom on the h3 in the aside section*/
+ #border-bottom{
+ 	border-bottom: 1px solid #dddddd;
+ }
+/* to put padding betwwen the statement(h3) which is (connect with me) and the liked picture which is (github,linkedin,stackoverflow)*/
+ aside h3 {
+
+ 	padding: 5px;
+ }
+ /* I putted padding between the a links inside the aside box and give width size*/
+ aside a {
+ 	padding: 5px;
+ 	width: 50px;
+ }
+ 
+/* I used line-height to put space between the lines in the paragraph*/
+p{
+	line-height: 2;
+
+/* the reason why I putted padding-left to put space between the paragraph and the border of the section*/
+}
+section p {
+
+	padding-left: 10px;
+	margin-top: 25px;
+	font-style: italic;
+}
+
+/* I used the section input to set the name and Email field in the section box on the contact.html */
+section input {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px 0px;
+}
+/* I used the id message to specify the changes on the message field */
+#message-div{
+	padding: 0px 3px 150px 0px;
+	width: 100%
+}
+
+/* I used the id message to specify the changes on the submit field */
+
+#submit-div{
+	width: 60px;
+	background-color: #4aaaa5;
+}
+
+/* I used id on the section of portfolio.html to avoid the overflow after the floating*/
+#portfolio-section{
+}
+
+/* I used id on the img inside the portfolio section to change the width of the images,also change the margin of the images inside the portfolio.html*/
+#portfolio-section img {
+
+	width: 200px;
+	margin: 10px 50px;
+
+
+}
+
+/* I used id portfolio-section h4 to set the h4(the words which has to be on the images) to be on the images, the reson why I used postion: relative; top:200px; to push the word which was above the images to push to the middle of the images (push it from top to bottom)*/
+#portfolio-section h4 {
+
+	width: 200px;
+	margin: 10px 50px;
+	text-align: center;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	position: relative;
+	top: 200px;
+	padding: 15px 0px;
+	
+}
+/* I used float left to all the images and the words inside the div tag of the class section-content which called by portfolio-section id*/ 
+#portfolio-section .section-content div {
+	float: left;
+	width: 100%;
+
+
+} 
+
+
+
+/* I have to use clear: both after the float to control how things will float (to make sure that the floating will be in order)*/
+.thirdrow {
+	float: none;
+	clear: both;
+} 
+
+/* the reason why I used the main-logo-connect class and used the margin 0 auto and specify the width because I want the main logo with the connect moving when we shrink or enlarge the page. * we have to secify the width with number of px not with the percentage to make the margin 0 auto works*/
+.main-logo-connect{
+	width: 960px;
+	margin: 0 auto;
+}
+ @media only screen and (max-width: 980px) {
+ 
+  	#aboutme-section img{
+  		
+  	}
+  	#portfolio-section{
+	width: 100%;
+
+}
+#aboutme-main{
+	margin-left: 15vw;
+	margin-right: 15vw;
+	width: 70vw;
+
+}
+
+#portfolio-section img{
+	margin: 10px 80px;
+}
+#portfolio-section h4{
+
+	margin: 80px;
+}
+#portfolio-main{
+	width: 100%;
+	max-width: 980px;
+
+}
+#portfolio-section{
+	width: 100%;
+	max-width: 400px;
+	margin-left: 0 auto;
+}
+  #main-logo{
+  	margin-left: 0 auto;
+  }
+  #portfolio-section h4{
+	position: relative;
+	top: 280px;
+}
+footer{
+	width: 100%;
+	max-width: 980px;
+}
+
+
+
+ }
+ @media only screen and (max-width: 768px) {
+ 	section{
+ 		width: 600px;
+ 		float: none;
+
+ }
+ aside{
+ 	width: 600px;
+ 	margin-top: 20px;
+ }
+ #portfolio-section img {
+
+	width: 100px;
+}
+header{
+	max-width: 600px;
+	width:100%;
+	margin: 0px;
+}
+#portfolio-main{
+	width: 100%;
+	max-width: 768px;
+}
+#connect{
+	float: none;
+}
+#portfolio-section{
+	height: 800px;
+}
+footer{
+	width: 100%;
+	max-width: 600px;
+}
+
+}
+
+
+@media only screen and (max-width: 640px){
+
+	section{
+		width: 100%;
+	}
+		#aboutme-section img {
+		width: 300px;
+		float: none;
+	}
+	#connect{
+		float: none;
+		background-color: #ffffff;
+		text-align: center;
+	}
+	#main-logo{
+		float: none;
+		text-align: center;
+
+	}
+	aside{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		max-width: 640px;
+	}
+	.main-logo-connect{
+	width: 100%;
+	
+	}
+#aboutme-main{
+		width: 100%;
+		margin:0px;
+	}
+	#portfolio-section .section-content div {
+	float: left;
+	width: 100px;
+
+}
+#portfolio-section{
+	height: 900px;
+}
+ #portfolio-section img {
+
+	width: 100px;
+
+}
+
+
+
+
+ 
